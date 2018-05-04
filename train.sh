@@ -1,0 +1,1 @@
+PYTHONPATH=/media/HDD_3TB/eaguilar/lib/new/Theano:/home/lifelogging/code/keras:/media/HDD_3TB/bea/multimodal_keras_wrapper:/media/HDD_3TB/bea/keras_semantic_segmentation:$PYTHONPATH THEANO_FLAGS='device=cuda,optimizer=fast_compile,optimizer_including=fusion' python -u main.py
