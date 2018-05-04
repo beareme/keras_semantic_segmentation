@@ -8,6 +8,8 @@ Fully Convolutional Networks for Semantic Segmentation in Keras
  - Insert the data paths in config.py and modify any parameter as desired.
  - Run ./train.sh to train a model.
 
+Note that the code has been tested using Theano as backend.
+
 ## Dependencies
 
 The following dependencies are required for using this library:
@@ -23,11 +25,11 @@ Alternatively, you can clone it from GitHub as follows:
 git clone https://github.com/beareme/keras_semantic_segmentation.git
 ```
 
-## Keras
+## Keras
 
 For additional information on the Deep Learning library, visit the official web page www.keras.io or the GitHub repository https://github.com/fchollet/keras.
 
-## References
+## References
 
 S. Jégou, M. Drozdzal, D. Vazquez, A. Romero, Y. Bengio (2017). The One Hundred Layers Tiramisu: Fully Convolutional Densenets for Semantic Segmentation. IEEE Conference on Computer Vision and Pattern Recognition Workshops, pp. 1175-1183.
 
