@@ -5,6 +5,7 @@ Fully Convolutional Networks for Semantic Segmentation in Keras
 ## Usage
 
  - Modify the file train.sh including the paths to multimodal_keras_wrapper library and Keras.
+ - Prepare the dataset following the same format as sample_data.
  - Insert the data paths in config.py and modify any parameter as desired.
  - Run ./train.sh to train a model.
 

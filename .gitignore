@@ -117,6 +117,7 @@ tramp
 *.txt
 */trained_models
 */datasets
+*/logs
 
 # Running files
 .fuse_hidden*

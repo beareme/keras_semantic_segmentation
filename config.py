@@ -58,7 +58,7 @@ def load_parameters():
     # Input data parameters
     MEAN_SUBSTRACTION = False       # Substract the training mean
     NORMALIZE = True                # Normalize input data
-    NORMALIZATION_TYPE = '(-1)-1'   # Normalize input data: '0-1' for [0, 1], and '(-1)-1' for [-1,1]
+    NORMALIZATION_TYPE = '0-1'   # Normalize input data: '0-1' for [0, 1], and '(-1)-1' for [-1,1]
 
     DATA_AUGMENTATION = True        # Apply data augmentation on input data (noise on features, random crop on images)
     SHUFFLE_TRAIN = True            # Apply shuffling on training data at the beginning of each epoch
@@ -122,7 +122,7 @@ def load_parameters():
     USE_L2 = False                      # L2 normalization on the features
 
     # Results plot and models storing parameters
-    EXTRA_NAME = 'model'                  # This will be appended to the end of the model name
+    EXTRA_NAME = 'model2'                  # This will be appended to the end of the model name
     MODEL_NAME = DATASET_NAME + '_' + MODEL_TYPE + '_' + OPTIMIZER.lower()
     MODEL_NAME += '_'+EXTRA_NAME
 
