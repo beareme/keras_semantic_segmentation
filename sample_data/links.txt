@@ -1,0 +1,2 @@
+https://github.com/alexgkendall/SegNet-Tutorial
+http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/
