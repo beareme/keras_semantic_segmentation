@@ -3,8 +3,8 @@ def load_parameters():
         Loads the defined parameters
     """
     # Input data params
-    DATA_ROOT_PATH = '/media/HDD_3TB/DATASETS/CamVid/'  # Root path to the data
-    DATASET_NAME = 'CamVid_segmentation'                # Dataset name
+    DATA_ROOT_PATH = '/media/HDD_3TB/DATASETS/CamVid/'		# Root path to the data
+    DATASET_NAME = 'CamVid_segmentation'  			# Dataset name
 
     MEAN_IMAGE = [103.939, 116.779, 123.68]  	# Training mean image values for each channel (RGB)
     IMG_SIZE = [360, 480, 3]  	    		# Size of the input images (will be resized to the desired size)
@@ -58,7 +58,7 @@ def load_parameters():
     # Input data parameters
     MEAN_SUBSTRACTION = False       # Substract the training mean
     NORMALIZE = True                # Normalize input data
-    NORMALIZATION_TYPE = '0-1'   # Normalize input data: '0-1' for [0, 1], and '(-1)-1' for [-1,1]
+    NORMALIZATION_TYPE = '(-1)-1'   # Normalize input data: '0-1' for [0, 1], and '(-1)-1' for [-1,1]
 
     DATA_AUGMENTATION = True        # Apply data augmentation on input data (noise on features, random crop on images)
     SHUFFLE_TRAIN = True            # Apply shuffling on training data at the beginning of each epoch
@@ -80,7 +80,7 @@ def load_parameters():
     LR_DECAY = 1                        # Number of epochs before the next LR decay (set to None for disabling)
     LR_GAMMA = 0.995                    # Multiplier used for decreasing the LR
 
-    OPTIMIZER = 'rmsprop'               # Optimizer
+    OPTIMIZER = 'rmsprop'               # Optimizer: 'rmsprop', 'adam'
     LR = 0.001                          # Recommended values: Adam 0.001, Adadelta 1.0 (Tiramisu: 0.001 for pre-training, 0.0001 for fine-tuning)
     EPSILON = 1e-6
     PRE_TRAINED_LR_MULTIPLIER = 0.01    # Learning rate multiplier assigned to all previously trained layers
@@ -122,7 +122,7 @@ def load_parameters():
     USE_L2 = False                      # L2 normalization on the features
 
     # Results plot and models storing parameters
-    EXTRA_NAME = 'model2'                  # This will be appended to the end of the model name
+    EXTRA_NAME = 'model'                  # This will be appended to the end of the model name
     MODEL_NAME = DATASET_NAME + '_' + MODEL_TYPE + '_' + OPTIMIZER.lower()
     MODEL_NAME += '_'+EXTRA_NAME
 
