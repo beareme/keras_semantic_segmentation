@@ -1,0 +1,4 @@
+/data/testannot/0001TP_008550.png
+/data/testannot/0001TP_008580.png
+/data/testannot/0001TP_008610.png
+/data/testannot/0001TP_008640.png
