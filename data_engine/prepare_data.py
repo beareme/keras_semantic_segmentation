@@ -42,9 +42,9 @@ def build_dataset(params):
         if params['MEAN_IMAGE']:
             # if params['NORMALIZE']:
             #    params['MEAN_IMAGE'] = [m / 255. for m in params['MEAN_IMAGE']]
-            ds.setTrainMean(params['MEAN_IMAGE'], params['INPUTS_IDS_DATASET'][0], use_RGB=params['RGB'])
+            ds.setTrainMean(params['MEAN_IMAGE'], params['INPUTS_IDS_DATASET'][0])
         else:
-            ds.calculateTrainMean(params['INPUTS_IDS_DATASET'][0], use_RGB=params['RGB'])
+            ds.calculateTrainMean(params['INPUTS_IDS_DATASET'][0])
 
         ##### OUTPUT DATA
         if params['TYPE_OUT'] == '3DLabel':
