@@ -15,7 +15,7 @@ Note that the code has been tested using Theano as backend.
 
 The following dependencies are required for using this library:
  - [Custom Keras fork](https://github.com/MarcBS/keras/releases/tag/2.0.9) >= 2.0.9
- - [Multimodal Keras Wrapper](https://github.com/MarcBS/multimodal_keras_wrapper/releases/tag/v2.1.5) >= 2.1.5
+ - [Multimodal Keras Wrapper](https://github.com/MarcBS/multimodal_keras_wrapper/releases/tag/v2.1.6) >= 2.1.6
 
 ## Download
 
